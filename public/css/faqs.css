@@ -1,0 +1,187 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    background-color: rgb(188, 53, 53);
+    color: rgb(0, 0, 0);
+    height: 2vh;
+    width: 100%;
+    margin: auto;
+    padding: 4vw 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    font-size: 18px;
+    font-family: 'Courier New', Courier, monospace;
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.navbar ul li a:hover{
+    color: rgb(0, 0, 0);
+    transition: 0.5s;
+}
+
+.navbar ul li::after{ 
+    content: '';
+    height: 0.2vh;
+    width: 0%;
+    background: #000000;
+    position: absolute;
+    left: 0;
+    bottom: -7px;
+    transition: 0.5s;
+}
+
+.navbar ul li:hover::after{
+    width: 100%;
+}
+
+.logo{
+    height: 70px;
+    opacity: 80%;
+    margin-left: 10px;
+}
+
+
+body {
+  background: black;
+  color: #000;
+  margin: 0;
+}
+
+.container {
+    position: relative;
+}
+
+.wrapper-holder{
+    display: flexbox;
+    margin: 30px;
+    margin-left: 110px;
+}
+
+.images{
+    height: 470px;
+    width: 310px;
+    margin: 20px;
+    border-radius: 25px;
+    box-shadow: 6px 6px 7px 7px rgb(33, 32, 32);
+}
+
+.black-box-2{
+    height: 110px;
+    background-color: black;
+}
+
+.last-container{
+    padding-top: 20px;
+    padding-left: 20px;
+    background-color: rgb(188, 53, 53);
+    height: 170px;
+}
+
+.margin-box{
+    display: flex;
+    background-color: black;
+    margin-left: 120px;
+    height: 2px;
+    width: 80%;
+}
+
+.text-box{
+    display: flex;
+    margin-left: 450px;
+    margin-top: 50px;
+}
+
+.about-about{
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 33px;
+    letter-spacing: -1.5px;
+    margin-top: -155px;
+    margin-left: 350px;
+}
+
+.about-text{
+    display: flex;
+    /* letter-spacing: ; */
+    margin-top: 20px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 18px;
+    letter-spacing: 0px;
+    margin-left: 350px;
+}
+
+.list{
+    margin-left: 850px;
+    text-decoration: none;
+    margin-top: -100px;
+}
+
+ul{
+    list-style-type: none;
+}
+
+.whatsapp{
+    margin-top: 100px;
+    height: 25px;
+    display: flex;
+}
+
+.numberLink{
+    display: flex;
+    padding-left: 40px;
+    color: black;
+    margin-top: -20px;
+    font-size: 14.5px;
+}
+
+.email{
+    height: 21px;
+    padding-top: 10px;
+}
+
+.emailLink{
+    display: flex;
+    padding-left: 40px;
+    color: black;
+    margin-top: -23px;
+}
+
+.location{
+    height: 25px;
+    padding-top: 8px;
+    padding-left: 5px;
+}
+
+.locationLink{
+    display: flex;
+    padding-left: 40px;
+    color: black;
+    margin-top: -23px;
+    font-size: 14.5px;
+}
+
+.contactHeading{
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 33px;
+    letter-spacing: -1.5px;
+    margin-top: -140px;
+    margin-left: 850px;
+    display: flex;
+    padding-bottom: 13px;
+}
