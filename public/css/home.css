@@ -25,7 +25,7 @@
     display: flex;
     position: relative;
     z-index: 10;
-    top: 90vh;
+    top: 95vh;
     margin-left: 12px;
     font-size: 2.3vw;
     opacity: 100%;
@@ -36,12 +36,12 @@
 }
 
 .navbar {
-    background-color: rgb(188, 53, 53);
+    background-color: #800000;
     color: rgb(0, 0, 0);
-    height: 2vh;
+    height: 1vh;
     width: 100%;
     margin: auto;
-    padding: 4vw 0;
+    padding: 3vw 0;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -89,154 +89,159 @@
     margin-left: 10px;
 }
 
-.discord{
-    background-color: #cacace;
-    height: 171px;
-    width: 500px;
-    margin-left: 100px;
-    border-radius: 20px;
-    position: absolute;
-    z-index: 20;
-    top: 120%;
-    text-align: center;
-    padding-top: 70px;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-size: 40px;
-    color: black;
-    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
-    cursor: pointer;
-}   
-
-.d-upper-box{
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-    background-color: rgb(41, 63, 202);
-    height: 120px;
-    margin-top: -120px;
+.connect-header {
+    font-family:'Times New Roman', Times, serif;
+    color: white;
+    margin-left: 480px;
+    margin-top: 25px;
+    font-size: 45px;
+    padding-bottom: 10px;
 }
 
-.d-lower-box{
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
-    background-color: rgb(0, 0, 0);
-    height: 120px;
+.dotted-line {
+    color: #ffffff;
+    margin-top: 70px;
+    margin-left: -350px;
 }
 
 .discord-logo{
     display: flex;
-    height: 60px;
-    width: 85px;
+    height: 130px;
+    width: 160px;
     top: 55%;
-    margin-left: 200px;
+    margin-left: 140px;
+    margin-top: 600px;
     border-radius: 10px;
     position: absolute;
     z-index: 20;
-}
-
-.discord:hover{
-    .d-upper-box{
-        background-color: rgb(55, 76, 209);
-        transition: 500ms;
-    }
-
-    .d-lower-box{
-        background-color: rgb(28, 27, 27);
-        transition: 500ms;
-        border: 1px solid rgb(75, 94, 224);
-    }
-
-}
-
-.instagram{
-    background-color: #cacace;
-    height: 171px;
-    width: 500px;
-    margin-left:660px;
-    border-radius: 20px;
-    position: absolute;
-    z-index: 20;
-    top: 120%;
-    text-align: center;
-    padding-top: 70px;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-size: 40px;
-    color: black;
-    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
     cursor: pointer;
 }
 
-.i-upper-box{
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-    background-color: rgb(204, 39, 39);
-    height: 120px;
-    margin-top: -120px;
+.discord-header {
+    display: flex;
+    width: 10px;
+    color: white;
+    margin-top: -195px;
+    margin-left: 172px;
+    font-size: 30px;
+    padding-bottom: 100px;
 }
 
-.i-lower-box{
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
-    background-color: rgb(0, 0, 0);
-    height: 120px;
+.discord-logo:hover{
+    transition: 400ms;
+    scale: 1.2;
 }
 
 .instagram-logo{
     display: flex;
-    height: 60px;
-    width: 65px;
-    border-radius: 18px;
-    margin-left: 210px;
-    opacity: 85%;
+    height: 130px;
+    width: 140px;
     top: 55%;
+    margin-left: 440px;
+    margin-top: 600px;
     position: absolute;
+    z-index: 20;
+    cursor: pointer;
 }
 
-.instagram:hover{
+.instagram-header {
+    display: flex;
+    color: white;
+    margin-top: -131px;
+    margin-left: 445px;
+    font-size: 30px;
+    padding-bottom: 100px;
+}
 
-    .i-upper-box{
-        background-color: rgb(205, 69, 69);
-        transition: 500ms;
-    }
+.instagram-logo:hover{
+    transition: 400ms;
+    scale: 1.2;
+}
 
-    .i-lower-box{
-        background-color: rgb(28, 27, 27);
-        transition: 500ms;
-        border: 1px solid rgb(232, 83, 83);
-    }
+.youtube-logo {
+    display: flex;
+    height: 130px;
+    width: 135px;
+    top: 55%;
+    margin-left: 710px;
+    margin-top: 600px;
+    position: absolute;
+    z-index: 20;
+    cursor: pointer;
+}
+
+.youtube-header {
+    display: flex;
+    color: white;
+    margin-top: -135px;
+    margin-left: 720px;
+    font-size: 30px;
+    padding-bottom: 100px;
+}
+
+.youtube-logo:hover{
+    transition: 400ms;
+    scale: 1.2;
+}
+
+.facebook-logo {
+    display: flex;
+    height: 130px;
+    width: 95px;
+    top: 55%;
+    margin-left: 995px;
+    margin-top: 600px;
+    position: absolute;
+    z-index: 20;
+    cursor: pointer;
+}
+
+.facebook-header {
+    display: flex;
+    color: white;
+    margin-top: -135px;
+    margin-left: 985px;
+    font-size: 30px;
+    padding-bottom: 100px;
+}
+
+.facebook-logo:hover{
+    transition: 400ms;
+    scale: 1.2;
 }
 
 .black-box{
-    height: 260px;
+    height: 460px;
+    display: flex;
     background-color: black;
 }
 
 .quote{
-    /* margin-top: 260px; */
     padding: 50px;
-    background-color: rgb(188, 53, 53);
+    background-color: #800000;
 }
 
 .text{
     word-wrap: break-word;
     font-size: 50px;
     padding-top: 15px;
-    padding-left: 15px;
+    padding-left: 30px;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-weight: 500;
-    color: black;
+    color: rgb(255, 255, 255);
 }
 
 .quotation{
     height: 75px;
-    opacity: 100%;
 }
 
+
 .dash{
-    background-color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
     height: 1px;
     width: 56px;
     display: flex;
-    margin-left: 25px;
+    margin-left: 35px;
     margin-top: 30px;
 }
 
@@ -244,10 +249,10 @@
     font-family:'Times New Roman', Times, serif;
     display: flex;
     margin-top: -12.5px;
-    background-color: rgb(188, 53, 53);
-    color: rgb(0, 0, 0);
+    background-color: #800000;
+    color: rgb(255, 255, 255);
     width: 200px;
-    margin-left: 90px;
+    margin-left: 110px;
     font-size: 20px;
 }
 
@@ -256,10 +261,79 @@
     background-color: black;
 }
 
+.form-container {
+    background-color: black;
+}
+
+.red-line {
+    height: 2px;
+    width: 85%;
+    margin-left: 90px;
+    background-color: #800000;
+}
+
+.main-form {
+    width: 50%;
+    margin-top: 10px;
+    margin-left: 270px;
+    padding: 40px;
+    background-color: #000000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 2px;
+}
+
+h2 {
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    padding-top: 10px;
+    color: #ffffff;
+    margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 13px;
+    border: 1px solid #ffffff;
+    box-sizing: border-box;
+    background-color: #000000;
+    color: white;
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+.submit-btn {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #c53838;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.submit-btn:hover {
+    background-color: #a12f2f;
+}
+
 .last-container{
     padding-top: 20px;
     padding-left: 20px;
-    background-color: rgb(188, 53, 53);
+    background-color: #800000;
     height: 170px;
 }
 
@@ -278,21 +352,20 @@
 }
 
 .about-about{
-    font-family:Arial, Helvetica, sans-serif;
+    font-family: Arial;
     font-size: 33px;
-    letter-spacing: -1.5px;
     margin-top: -155px;
     margin-left: 350px;
+    color: white;
 }
 
 .about-text{
     display: flex;
-    /* letter-spacing: ; */
     margin-top: 20px;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: Arial;
     font-size: 18px;
-    letter-spacing: 0px;
     margin-left: 350px;
+    color: white;
 }
 
 .list{
@@ -314,7 +387,7 @@ ul{
 .numberLink{
     display: flex;
     padding-left: 40px;
-    color: black;
+    color: rgb(255, 255, 255);
     margin-top: -20px;
     font-size: 14.5px;
 }
@@ -327,7 +400,7 @@ ul{
 .emailLink{
     display: flex;
     padding-left: 40px;
-    color: black;
+    color: white;
     margin-top: -23px;
 }
 
@@ -340,17 +413,18 @@ ul{
 .locationLink{
     display: flex;
     padding-left: 40px;
-    color: black;
+    color: white;
     margin-top: -23px;
     font-size: 14.5px;
 }
 
 .contactHeading{
-    font-family:Arial, Helvetica, sans-serif;
+    font-family: Arial;
     font-size: 33px;
-    letter-spacing: -1.5px;
     margin-top: -140px;
     margin-left: 850px;
     display: flex;
     padding-bottom: 13px;
+    color: white;
 }
+
