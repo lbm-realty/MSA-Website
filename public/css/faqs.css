@@ -92,7 +92,7 @@ body {
     padding-top: 20px;
     padding-left: 20px;
     background-color: #800000;
-    height: 170px;
+    height: 180px;
 }
 
 .margin-box{
@@ -187,4 +187,8 @@ ul{
     display: flex;
     padding-bottom: 13px;
     color: white;
+}
+
+.msa-logo {
+    width: 180px;
 }

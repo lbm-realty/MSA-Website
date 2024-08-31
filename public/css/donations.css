@@ -184,8 +184,17 @@
     color: white;
     border-radius: 15px;
     font-size: 24px;
-    max-width: 120px;
+    max-width: 140px;
+    width: 120px;
     border: 1.5px solid red;
+    cursor: pointer;
+}
+
+#donation-button-custom:hover {
+    background-color:  rgb(180, 22, 22);
+    color: rgb(0, 0, 0);
+    border: 1.5px solid rgb(0, 0, 0);
+    transform: scale(1.05);
 }
 
 #custom-amount {
@@ -216,8 +225,11 @@
 }
 
 #custom-donate-button:hover {
-    border: 1.5px solid #cd1616;
-    transition: 500ms;
+    border: 1.5px solid #020202;
+    background-color: #c51e1e;
+    color: black;
+    transition: 300ms;
+    transform: scale(1.05);
 }
 
 .black-box-2{
@@ -229,7 +241,7 @@
     padding-top: 20px;
     padding-left: 20px;
     background-color: #800000;
-    height: 170px;
+    height: 180px;
 }
 
 .margin-box{
@@ -326,4 +338,8 @@ ul{
     display: flex;
     padding-bottom: 13px;
     color: white
+}
+
+.msa-logo {
+    width: 180px;
 }

@@ -220,9 +220,22 @@
 
 .image-gallery {
     background-color:  #800000;
-    height: 600px;
+    height: 800px;
     padding: 10px;
     text-align: center;
+}
+
+.heading {
+    display: flex;
+    margin-top: -100px;
+    bottom: 200px;
+    padding-bottom: 5px;
+    background-color: black;
+    padding-left: 110px;
+}
+
+.gallery-link {
+    text-decoration: none;
 }
 
 .image-gallery h2 {
@@ -243,6 +256,7 @@
     overflow: hidden;
     border-radius: 10px;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    height: 500px;
 }
 
 .gallery-item img {
@@ -287,8 +301,8 @@
 .last-container{
     padding-top: 20px;
     padding-left: 20px;
-    background-color:  #800000;
-    height: 170px;
+    background-color: #800000;
+    height: 180px;
 }
 
 .margin-box{
@@ -383,4 +397,8 @@ ul{
     display: flex;
     padding-bottom: 13px;
     color: white;
+}
+
+.msa-logo {
+    width: 180px;
 }

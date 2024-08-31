@@ -9,10 +9,33 @@
 <body>
     <div class="container">
         <div class="banner">
+            <div class="slider-wrapper">
+                <div class="slider">
+                    <img id="slide-1" class="banner-image" src="./images/slide-show-1.jpg" alt="">
+                    <img id="slide-2" class="banner-image" src="./images/slide-show-2.png" alt="">
+                    <img id="slide-3" class="banner-image" src="./images/slide-show-3.png" alt="">
+                    <img id="slide-4" class="banner-image" src="./images/slide-show-4.png" alt="">
+                    <img id="slide-5" class="banner-image" src="./images/slide-show-5.png" alt="">
+                    <img id="slide-6" class="banner-image" src="./images/slide-show-6.png" alt="">
+                    <img id="slide-7" class="banner-image" src="./images/slide-show-7.png" alt="">
+                    <img id="slide-8" class="banner-image" src="./images/slide-show-8.png" alt="">
+                </div>
+                <div class="slider-nav">
+                    <a href="#slide-1"></a>
+                    <a href="#slide-2"></a>
+                    <a href="#slide-3"></a>
+                    <a href="#slide-4"></a>
+                    <a href="#slide-5"></a>
+                    <a href="#slide-6"></a>
+                    <a href="#slide-7"></a>
+                    <a href="#slide-8"></a>
+                </div>
+            </div>
+        </div>
             <div class="navbar">
                 <img src="images/msa-logo.png" class="logo"><a href="#"></a>
                 <ul>
-                    <li><a href="#">Home</a></li>
+                    <li><a href="index.html">Home</a></li>
                     <li><a href="faq.html">FAQs</a></li>
                     <li><a href="donate.html">Donate</a></li>
                     <li><a href="#">Newsletter</a></li>
@@ -21,16 +44,13 @@
             </div>
             <div class="ayah-arabic">اِنَّمَا الۡمُؤۡمِنُوۡنَ اِخۡوَةٌ فَاَصۡلِحُوۡا بَيۡنَ اَخَوَيۡكُمۡ</div>
             <div class="ayah-english">The believers are but one brotherhood, so make peace between your brothers.</div>
-        </div>
         
-        <div class="black-box">
-            <h1 class="connect-header">Connect With Us!</h1>
-            <p class="dotted-line"> -------------------------------------------------------------------- </p>
-        </div>
+        <div class="black-box"></div>
     </div>
 
     
-    <div class="more">  
+    <div class="more"> 
+            <h1 class="connect-header">Connect With Us!</h1> 
             <a href="https://discord.com/channels/1002380266339307600/1002380266792300635">
                 <img src="images/new-discord-logo.png" class="discord-logo">
             </a>
@@ -40,10 +60,12 @@
             </a>
             <h3 class="instagram-header">Instagram</h3>
             <a href="https://www.youtube.com/@texastechuniversitymuslims4754">
-                <img src="images/youtube-logo.png" class="youtube-logo">
+                <img src="images/new-youtube-logo.png" class="youtube-logo">
             </a>
             <h3 class="youtube-header">YouTube</h3>
-            <img src="images/facebook-logo.png" class="facebook-logo">
+            <a href="https://www.facebook.com/TexasTechMSA">
+                <img src="images/facebook-logo.png" class="facebook-logo">
+            </a>
             <h3 class="facebook-header">Facebook</h3>
     </div>
 
@@ -60,7 +82,8 @@
         <div class="red-line"></div>
         <div class="main-form">
             <h2>Send Us a Message!</h2>
-            <form action="/submit-form" method="POST">
+            <form action="https://api.web3forms.com/submit" method="POST">
+                <input type="hidden" name="access_key" value="d5783baa-71d4-4cf1-a3d1-b9ec1724380c">
                 <div class="form-group">
                     <label for="name">Name*</label>
                     <input type="text" id="name" name="name" required>
@@ -81,7 +104,7 @@
     <div class="black-box-2"></div>
     <div class="last-container">
         <div class="msa-logo">
-            <img src="images/msa-logo.png" alt="">
+            <img class="msa-logo" src="images/msa-logo.png" alt="">
         </div>
         <div class="about">
             <div class="about-about">About</div>
