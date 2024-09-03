@@ -3,113 +3,16 @@
     padding: 0;
 }
 
-.banner{
-    /* width: 100%;
-    height: 135vh;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0,0,0,0.75)), url(../images/boys-picture.jpg);
-     */
-     position: relative;
-     width: 100%;
-     height: auto; 
-     overflow: hidden;
-}
-
-.banner-image {
-    width: 100%;
-    height: auto;
-    display: block;
-}
-
-.banner::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    /* width: 100%; */
-    height: 100%;
-    background: rgba(0, 0, 0, 0.65);
-    pointer-events: none; 
-}
-
-.slider-wrapper {
-    position: relative;
-    width: 100%;
-    margin: 0 0;
-}
-
-.slider {
-    display: flex;
-    aspect-ratio: 16 / 9;
-    overflow-x: auto; 
-    scroll-snap-type: x mandatory;
-    scroll-behavior: smooth;
-    box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 0%, 0.25);
-}
-
-.slider-nav {
-    display: flex;
-    column-gap: 1rem;
-    position: absolute;
-    bottom: 1.25rem;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 1;
-}
-
-.slider-nav a {
-    width: 0.5rem;
-    height: 0.5rem;
-    border-radius: 50%;
-    background-color: #fff;
-    opacity: 0.75;
-    transform: opacity ease 250ms;
-}
-
-.slider-nav a:hover {
-    opacity: 1;
-}
-
-.ayah-arabic {
-    color: white;
-    display: flex;
-    position: absolute;
-    bottom: 10vh;
-    width: 100%;
-    z-index: 10;
-    font-size: 7.5vw;
-    opacity: 75%;
-    padding: 2vw;
-    background-color: rgb(44, 42, 42);
-}
-
-.ayah-english {
-    color: white;
-    display: flex;
-    position: absolute;
-    z-index: 10;
-    top: 94vh;
-    width: 100%;
-    margin-left: 12px;
-    font-size: 2.3vw;
-    opacity: 75%;
-    padding: 2vw 2vh;
-    margin-right: 2vw;
-    margin-left: 11vw;
-    margin-top: -100px;
-}
-
 .navbar {
     background-color: #800000;
     color: rgb(0, 0, 0);
     height: 1vh;
     width: 100%;
+    margin: auto;
     padding: 3vw 0;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    bottom: 500px;
-    z-index: 10;
-    position: absolute;
 }
 
 .navbar ul li{
@@ -133,7 +36,7 @@
     transition: 0.5s;
 }
 
-.navbar ul li::after{
+.navbar ul li::after{ 
     content: '';
     height: 0.2vh;
     width: 0%;
@@ -150,47 +53,232 @@
 
 .logo{
     height: 70px;
-    opacity: 80%;
     margin-left: 10px;
 }
 
-.more {
-    background-color: black;
+/* Hamburger Menu Button */
+.menu-btn {
+    display: none;
+    cursor: pointer;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 20px;
+}
+
+.menu-btn__burger {
+    width: 100%;
+    height: 3px;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.menu-btn__burger::before,
+.menu-btn__burger::after {
+    content: '';
+    width: 100%;
+    height: 3px;
+    background-color: white;
+    position: relative;
+    display: block;
+    transition: all 0.3s ease;
+}
+
+.menu-btn__burger::before {
+    transform: translateY(-6px);
+}
+
+.menu-btn__burger::after {
+    transform: translateY(3px);
+}
+
+/* Responsive Design */
+@media screen and (width < 600px) {
+    .logo {
+        scale: 0.5;
+        margin-left: 0;
+    }
+
+    .navbar ul {
+        position: absolute;
+        top: 70px;
+        right: 0;
+        background-color: #800000;
+        height: 0;
+        width: 100%;
+        flex-direction: column;
+        overflow: hidden;
+        transition: height 0.3s ease;
+        display: none;
+    }
+
+    .navbar ul li {
+        text-align: center;
+        margin: 20px 0;
+    }
+
+    .menu-btn {
+        display: flex;
+        scale: 0.6;
+        margin-top: 10px;
+        margin-right: 10px;
+    }
+
+    .navbar.active .navbar-links {
+        display: flex;
+        height: auto;
+    }
+
+    /* Hamburger Icon Animation */
+    .menu-btn.open .menu-btn__burger {
+        transform: rotate(45deg);
+    }
+
+    .menu-btn.open .menu-btn__burger::before {
+        transform: rotate(90deg) translateX(-10px);
+    }
+
+    .menu-btn.open .menu-btn__burger::after {
+        opacity: 0;
+    }
+}
+
+
+.container {
+    display: flexbox;
+}
+
+.banner{
+    position: relative;
+    width: 100%;
+    height: auto; 
+    overflow: hidden;
+}
+
+.banner-image {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.banner::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.65);
+    pointer-events: none; 
+}
+
+.slider-wrapper {
+    position: relative;
+    width: 100%;
+    margin: 0 0;
+}
+
+.slider {
+    display: flex;
+    aspect-ratio: 16 / 9;
+    overflow-x: auto; 
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+}
+
+.slider-nav {
+    display: flex;
+    column-gap: 1rem;
+    position: relative;
+    align-items: center;
+    justify-content: safe;
+    bottom: 2.25rem;
+    left: 93%;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+
+.slider-nav a {
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 50%;
+    background-color: #fff;
+    opacity: 0.75;
+    transform: opacity ease 250ms;
+}
+
+.slider-nav a:hover {
+    opacity: 1;
+}
+
+.ayahs {
+    display: flexbox;
+}
+
+.ayah-arabic {
+    position: absolute;
+    width: 100%;
+    top: 61%;
+    transform: translate(0, -100%); 
+    color: white;
+    font-size: 5.5rem; 
+    font-weight: bold; 
+    padding: 3vh 10vw 0 5vw; 
+    background-color: rgb(44, 42, 42);
+    opacity: 80%;
+}
+
+.ayah-english {
+    position: absolute;
+    top: 66.9%;
+    width: 100%;
+    transform: translate(0, -100%); 
+    color: white;
+    font-size: 2rem; 
+    font-weight: bold; 
+    padding: 0 10vw 1vh 5vw; 
+    background-color: rgb(44, 42, 42);
+    opacity: 80%;
+}
+
+.socials-connect {
+    padding: 0 80px 50px 80px;
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+    flex-wrap: nowrap;
+    background-color: #000000;
+    height: 300px;
 }
 
 .connect-header {
-    font-family:'Times New Roman', Times, serif;
+    padding-top: 100px;
+    display: flex;
+    justify-content: center;
     background-color: black;
-    color: white;
-    position: relative;
-    bottom: 400px;
-    margin-left: 480px;
-    margin-top: 25px;
-    font-size: 45px;
-    padding-bottom: 10px;
+}
+
+.connect-header h1 {
+    font-family:'Times New Roman', Times, serif;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    font-size: 50px;
 }
 
 .discord-logo{
-    display: flex;
     height: 130px;
     width: 160px;
-    top: 55%;
-    margin-left: 140px;
-    margin-top: 600px;
     border-radius: 10px;
-    position: absolute;
-    z-index: 20;
     cursor: pointer;
 }
 
 .discord-header {
-    display: flex;
-    width: 10px;
+    background-color: rgb(0, 0, 0);
+    height: 20px;
+    width: 100px;
     color: white;
-    margin-top: -195px;
-    margin-left: 172px;
+    margin-left: 30px;
     font-size: 30px;
-    padding-bottom: 100px;
 }
 
 .discord-logo:hover{
@@ -199,24 +287,17 @@
 }
 
 .instagram-logo{
-    display: flex;
     height: 130px;
     width: 136.5px;
-    top: 55%;
-    margin-left: 443px;
-    margin-top: 600px;
-    position: absolute;
-    z-index: 20;
     cursor: pointer;
+    margin-left: 30px;
 }
 
 .instagram-header {
-    display: flex;
     color: white;
-    margin-top: -131px;
-    margin-left: 445px;
     font-size: 30px;
-    padding-bottom: 100px;
+    background-color: rgb(0, 0, 0);
+    margin-left: 30px;
 }
 
 .instagram-logo:hover{
@@ -225,24 +306,17 @@
 }
 
 .youtube-logo {
-    display: flex;
     height: 130px;
     width: 170px;
-    top: 55%;
-    margin-left: 690px;
-    margin-top: 600px;
-    position: absolute;
-    z-index: 20;
     cursor: pointer;
+    margin-left: 15px;
 }
 
 .youtube-header {
-    display: flex;
     color: white;
-    margin-top: -135px;
-    margin-left: 720px;
     font-size: 30px;
-    padding-bottom: 100px;
+    background-color: rgb(0, 0, 0);
+    margin-left: 40px;
 }
 
 .youtube-logo:hover{
@@ -251,29 +325,63 @@
 }
 
 .facebook-logo {
-    display: flex;
     height: 130px;
     width: 95px;
-    top: 55%;
-    margin-left: 995px;
-    margin-top: 600px;
-    position: absolute;
-    z-index: 20;
+    margin-left: 40px;
     cursor: pointer;
 }
 
 .facebook-header {
-    display: flex;
     color: white;
-    margin-top: -135px;
-    margin-left: 985px;
     font-size: 30px;
-    padding-bottom: 100px;
+    background-color: #000000;
+    margin-left: 30px;
 }
 
 .facebook-logo:hover{
     transition: 400ms;
     scale: 1.2;
+}
+
+@media all and (width < 600px) {
+    .socials-connect {
+        padding: 0 80px 50px 80px;
+        align-items: center;
+        justify-content: space-around;
+        display: flexbox;
+        flex-wrap: wrap;
+        background-color: #000000;
+        height: auto;
+    }
+    
+    .connect-header {
+        padding-top: 100px;
+        display: flex;
+        justify-content: center;
+        background-color: black;
+    }
+    
+    .connect-header h1 {
+        scale: 0.7;
+    }
+
+    .connect-discord {
+        scale: 0.7;
+        margin-left: 15px;
+    }
+
+    .connect-instagram {
+        scale: 0.7;
+    }
+
+    .connect-youtube {
+        scale: 0.7;
+        margin-left: 15px;
+    }
+
+    .connect-facebook {
+        scale: 0.7;
+    }
 }
 
 .black-box{
@@ -321,6 +429,24 @@
     width: 200px;
     margin-left: 110px;
     font-size: 20px;
+}
+
+@media all and (width < 600px) {
+    .text {
+        scale: 0.7;
+        width: 350px;
+        padding: 0;
+    }
+
+    .quotation {
+        scale: 0.9;
+    }
+
+    .footer {
+        margin-top: 0;
+        scale: 0.7;
+        margin-left: 10px;
+    }
 }
 
 .black-box-2{
@@ -397,48 +523,73 @@ h2 {
     background-color: #a12f2f;
 }
 
+@media all and (width < 600px) {
+    .form-container {
+        display: flexbox;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .red-line {
+        scale: 0.9;
+        margin-left: 35px;
+    }
+
+    .main-form {
+        scale: 0.9;
+        margin-left: 60px;
+
+    }
+}
+
 .last-container{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 15px;
+    padding-right: 30px;
+    align-items: center;
     padding-top: 20px;
-    padding-left: 20px;
     background-color: #800000;
     height: 180px;
 }
 
-.margin-box{
-    display: flex;
-    background-color: black;
-    margin-left: 120px;
-    height: 2px;
-    width: 80%;
+.msa-logo {
+    width: 180px;
 }
 
-.text-box{
-    display: flex;
-    margin-left: 450px;
-    margin-top: 50px;
+.about {
+    background-color: #800000;
+    display: flexbox;
 }
 
-.about-about{
+.about-header{
     font-family: Arial;
     font-size: 33px;
-    margin-top: -155px;
-    margin-left: 350px;
     color: white;
 }
 
 .about-text{
-    display: flex;
-    margin-top: 20px;
+    margin-top: 10px;
     font-family: Arial;
     font-size: 18px;
-    margin-left: 350px;
     color: white;
 }
 
-.list{
-    margin-left: 850px;
-    text-decoration: none;
-    margin-top: -100px;
+.connect {
+    display: flexbox;
+    justify-content: space-between;
+}
+
+.contactHeading{
+    font-family: Arial;
+    font-size: 33px;
+    color: white;
+    padding-bottom: 10px;
+}
+
+.list li {
+    display: flex;
+    align-items: center;
 }
 
 ul{
@@ -446,55 +597,71 @@ ul{
 }
 
 .whatsapp{
-    margin-top: 100px;
     height: 25px;
-    display: flex;
+    padding-bottom: 3px;
 }
 
 .numberLink{
-    display: flex;
-    padding-left: 40px;
+    padding-left: 10px;
     color: rgb(255, 255, 255);
-    margin-top: -20px;
     font-size: 14.5px;
 }
 
 .email{
     height: 21px;
-    padding-top: 10px;
+    padding-bottom: 3px;
 }
 
 .emailLink{
-    display: flex;
-    padding-left: 40px;
+    padding-left: 10px;
     color: white;
-    margin-top: -23px;
 }
 
 .location{
     height: 25px;
-    padding-top: 8px;
     padding-left: 5px;
+    padding-bottom: 3px;
 }
 
 .locationLink{
-    display: flex;
-    padding-left: 40px;
+    padding-left: 10px;
     color: white;
-    margin-top: -23px;
     font-size: 14.5px;
 }
 
-.contactHeading{
-    font-family: Arial;
-    font-size: 33px;
-    margin-top: -140px;
-    margin-left: 850px;
-    display: flex;
-    padding-bottom: 13px;
-    color: white;
-}
+@media all and (width < 600px) {
+    .last-container{
+        display: flex;
+        justify-content: space-evenly;
+        padding-right: 10px;
+        padding-left: 0;
+        padding-top: 20px;
+        background-color: #800000;
+        height: 180px;
+    }
 
-.msa-logo {
-    width: 180px;
+    .msa-logo {
+        scale: 0.7;
+        width: 100px;
+    }
+
+    .about, .about-header {
+        scale: 0.7;
+        width: 150px;
+    }
+
+    .about-text {
+        scale: 0.7;
+        width: 150px;
+        margin-top: 0;
+    }
+
+    .connect, .contactHeading {
+        scale: 0.7;
+    }
+
+    .list li, .whatsapp, .email, .location {
+        scale: 0.7;
+    }
+
 }

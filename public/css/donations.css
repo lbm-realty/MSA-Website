@@ -53,7 +53,6 @@
 
 .logo{
     height: 70px;
-    opacity: 80%;
     margin-left: 10px;
 } 
 
@@ -238,51 +237,53 @@
 }
 
 .last-container{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 15px;
+    padding-right: 30px;
+    align-items: center;
     padding-top: 20px;
-    padding-left: 20px;
     background-color: #800000;
     height: 180px;
 }
 
-.margin-box{
-    display: flex;
-    background-color: black;
-    margin-left: 120px;
-    height: 2px;
-    width: 80%;
+.msa-logo {
+    width: 180px;
 }
 
-.text-box{
-    display: flex;
-    margin-left: 450px;
-    margin-top: 50px;
+.about {
+    background-color: #800000;
+    display: flexbox;
 }
 
-.about-about{
-    font-family:Arial, Helvetica, sans-serif;
+.about-header{
+    font-family: Arial;
     font-size: 33px;
-    letter-spacing: -1.5px;
-    margin-top: -155px;
-    margin-left: 350px;
     color: white;
 }
 
 .about-text{
-    display: flex;
-    /* letter-spacing: ; */
-    margin-top: 20px;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-top: 10px;
+    font-family: Arial;
     font-size: 18px;
-    letter-spacing: 0px;
-    margin-left: 350px;
     color: white;
 }
 
-.list{
-    margin-left: 850px;
-    text-decoration: none;
-    margin-top: -100px;
+.connect {
+    display: flexbox;
+    justify-content: space-between;
+}
+
+.contactHeading{
+    font-family: Arial;
+    font-size: 33px;
     color: white;
+    padding-bottom: 10px;
+}
+
+.list li {
+    display: flex;
+    align-items: center;
 }
 
 ul{
@@ -290,56 +291,34 @@ ul{
 }
 
 .whatsapp{
-    margin-top: 100px;
     height: 25px;
-    display: flex;
+    padding-bottom: 3px;
 }
 
 .numberLink{
-    display: flex;
-    padding-left: 40px;
-    margin-top: -20px;
+    padding-left: 10px;
+    color: rgb(255, 255, 255);
     font-size: 14.5px;
-    color: white
 }
 
 .email{
     height: 21px;
-    padding-top: 10px;
+    padding-bottom: 3px;
 }
 
 .emailLink{
-    display: flex;
-    padding-left: 40px;
+    padding-left: 10px;
     color: white;
-    margin-top: -23px;
 }
 
 .location{
     height: 25px;
-    padding-top: 8px;
     padding-left: 5px;
+    padding-bottom: 3px;
 }
 
 .locationLink{
-    display: flex;
-    padding-left: 40px;
+    padding-left: 10px;
     color: white;
-    margin-top: -23px;
     font-size: 14.5px;
-}
-
-.contactHeading{
-    font-family:Arial, Helvetica, sans-serif;
-    font-size: 33px;
-    letter-spacing: -1.5px;
-    margin-top: -140px;
-    margin-left: 850px;
-    display: flex;
-    padding-bottom: 13px;
-    color: white
-}
-
-.msa-logo {
-    width: 180px;
 }

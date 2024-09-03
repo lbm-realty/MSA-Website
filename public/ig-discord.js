@@ -1,9 +1,17 @@
-let discord_btn = document.querySelector(".discord");
-discord_btn.addEventListener("click", function() {
-    window.open('https://discord.com/channels/1002380266339307600/1002380266792300635', '_blank');
-})
+// const menuBtn = document.querySelector('.menu-btn');
+// const navbar = document.querySelector('.navbar');
 
-let instagram_btn = document.querySelector(".instagram");
-instagram_btn.addEventListener("click", function() {
-    window.open('https://www.instagram.com/msa_ttu/', '_blank');
-})
+// menuBtn.addEventListener('click', () => {
+//     navbar.classList.toggle('active');
+//     menuBtn.classList.toggle('open');
+// });
+
+const menuBtn = document.querySelector('.menu-btn');
+const menu_btn = document.getElementById("menu-btn")
+const navbar_links = document.getElementById("navbar-links");
+const navbarLinks = document.querySelector('.navbar-links');
+const navbar = document.getElementById("navbar");
+
+menuBtn.addEventListener('click', () => {
+    navbarLinks.style.maxHeight == "active"
+});
